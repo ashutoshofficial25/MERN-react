@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(41, 41, 128);
+}
+.container{
+    display: block;
+    margin: 20%;
+}
+.image-container {
+    box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#banner-image {
+  display: flex;
+  width: 35%;
+
+  height: 113px;
+  opacity: 0.8;
+  position: absolute;
+  top: 22%;
+  left: 35%;
+}
+
+@media screen and (device-width:360px) 
+and (device-height:640){
+    #banner image{
+        width: 100%;
+
+    }
+    .card-container{
+        width: 100%;
+
+    }
+    
+}
+
+.banner-title {
+  position: absolute;
+  top: 25%;
+  left: 36%;
+  font-size: 2em;
+  color: white;
+}
+.banner-subtitle {
+  position: absolute;
+  top: 30.2%;
+  left: 38%;
+  font-size: 1.1;
+  color: rgb(223, 213, 213);
+}
+.card-container {
+  box-sizing: border-box;
+  background-color: rgba(64, 75, 62, 0.616);
+  color: white;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 35%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+}
+.form-control {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+}
+#query{
+    box-sizing: border-box;
+    height: 100px;
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    height:30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    
+    
+}
+.btn:hover{
+
+    transform: translateX(10px);
+}
+.btn a{
+    text-decoration: none;
+
+}

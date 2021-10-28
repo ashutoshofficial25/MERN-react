@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(45deg,rgb(54, 29, 29),black ,rgb(35, 104, 35));
+        }
+
+        .container{
+            display: block;
+            width: 400px;
+            background-image:linear-gradient(45deg,rgba(173, 92, 92, 0.945),rgba(161, 138, 138, 0.932),rgba(14, 14, 112, 0.897));
+            /* background-color: black; */
+            margin:10% auto;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+        .user-icon{
+            display: block;
+            
+            margin: auto;
+            width: 70px;
+            height: 70px;
+            background-color:blueviolet;
+            opacity: .5;
+            border: 2px double white;
+            border-radius: 50%;
+        }
+        .user-pass{
+            display: block;
+            margin: 10px;
+            box-sizing: border-box;
+
+        }
+        .user{
+            height: 25px;
+            width: auto;
+            margin-top:15px;
+            margin-bottom: 10px;
+            margin-left: 18%;
+            box-shadow: 3px 2px rgb(236, 234, 234);
+        }
+        .password{
+            height: 25px;
+            width: auto;
+            margin-top:15px;
+            margin-bottom: 10px;
+            margin-left: 18%;
+            box-shadow: 3px 2px rgb(236, 234, 234);
+        }
+
+        .remember{
+            display: flex;
+            justify-content:space-between;
+        }
+        .check{
+            display: flex;
+            justify-self: flex-start;
+            padding-left: 20px;
+        }
+        .forgot{
+            display: flex;
+            justify-self: flex-end;
+            padding-left: 15px;
+        }
+
+        .login-btn{
+
+            padding-top: 20px;
+            display: flex;
+            justify-content:center ;
+            
+            
+        }
+        #btn{
+            
+            border-radius: 20px;
+            width: 160px;
+            height: 35px;
+            background-color: rgb(95, 47, 139);
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class=user-icon>
+            <svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+        </div>
+
+        <div class="user-pass">
+            <input class="user" type="text" name="username" id="username" placeholder="username">
+            <input class="password" type="password" name="password" id="password" placeholder="password">
+        </div>
+
+        <div class="remember">
+            <span class="check">
+            <input type="checkbox" checked>
+            Remember me</span>
+
+            <a class="forgot" href="#forgot">Forgot Password?</a>
+        </div>
+
+        <div class="login-btn">
+            <button id="btn"> Log in</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

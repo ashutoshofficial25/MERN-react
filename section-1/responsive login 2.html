@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Display:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+     <style>
+
+         body{
+             background-color: rgba(63, 63, 241, 0.788);
+             padding: 50px;
+         }
+         header{
+             color: white;
+             font-size: 3em;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+         .my-card{
+             box-sizing: border-box;
+             padding: 50PX;
+             font-size: 1.2em;
+             font-family: sans-serif;
+             font-weight: bolder;
+         }
+         /* css style for column 1 */
+         .mybox-1{
+             background-color:rgba(63, 63, 241, 0.562) ;
+             padding: 40px;
+             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+         }
+         .my-btn a{
+             text-decoration: none;
+             color: white;
+
+         }
+
+         /* css style for box under column 1 */
+
+        .col-1-1{
+            background-color:rgba(63, 63, 241, 0) ;
+            color: white;
+            
+        }
+        /*  user icon and user img is used for both user icons used in Column 1 and Coluumn 2*/
+        .user-icon{
+            border-radius: 50%;
+        }
+        .user-img{
+            height: 100px;
+            width: 100px;
+        }
+        .user-text{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 1.5em;
+            color: blue;
+        }
+        .mybox-2{
+             background-color:rgba(63, 63, 241, 0.562) ;
+             padding: 40px;
+             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+         }
+       
+
+
+     </style>
+
+    </head>
+<body>
+
+    <header class="text-center">
+       Responsive Login Page
+    </header>
+    
+    <div class="container my-box ">
+
+        <div class="row">
+<!-- column 1 -->
+            <div class="col-md-5 mt-5 mybox-1">
+                <div class="card col-1-1">
+                    <div class="card-body mt-5 my-card text-center">
+                        <div class="mt-3">
+                            Facebook
+                        </div>
+                        <div class="mt-3">
+                            Welcome back , User!
+                        </div>
+
+                        <div class="user-icon mt-3">
+
+                                <img class="user-img"src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" alt="">
+                        </div>
+
+                        <button class="btn btn-secondary mt-3 my-btn">
+                            <a href="https://www.facebook.com/">
+                            Continue to Facebook </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!-- column-2 -->
+            <div class="col-md-7 mt-5 mybox-2">
+                <div class="card">
+                    <div class="card-body mt-5 my-card" >
+
+                        <div class="user-icon text-center">
+
+                            <img class="user-img"src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" alt="">
+                            <p class="user-text">Create an account!</p>
+                        </div>
+
+                        <form action="">
+                            <div>
+                                <input type="text" name="username" id="user" class="form-control mt-4" placeholder="Username">
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email" class="form-control mt-4" placeholder="Email">
+                            </div>
+                            <div>
+                                <input type="password" name="password" id="password" class="form-control mt-4" placeholder="Password">
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary float-end mt-4">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
